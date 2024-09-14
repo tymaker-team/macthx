@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AppKit
 import Cocoa
 
 struct ContentView: View {
@@ -20,6 +21,8 @@ struct ContentView: View {
     @State private var tbd: String = ""
     
     @State private var article: String = ""
+    
+    @State private var email: String = "person@example.com"
     
     var body: some View {
         VStack {
@@ -64,7 +67,6 @@ struct ContentView: View {
         .frame(width: 400)
 //        .offset(x: -200)
         VStack{
-//            var wart = String(six.prefix(1))
             
             let txtt = """
             Dear \(one),
@@ -74,6 +76,7 @@ struct ContentView: View {
             \(eig),
             \(fou)
             """
+            
             Text(txtt)
             Button(action: {
                 let cb = NSPasteboard.general
@@ -82,10 +85,34 @@ struct ContentView: View {
             }) {
                 Label("Copy", systemImage: "clipboard")
             }
+            TextField(
+                "Email address of recipient",
+                text: $email
+            ).frame(width: 250)
+            Link("Email", destination: URL(string: "mailto:" + email)!)
         }
         .textSelection(.enabled)
         .padding()
     }
+}
+
+struct NewWindow: View {
+    var body: some View {
+        Text("hello")
+    }
+}
+
+func neww() {
+    let nview = NewWindow()
+    let ctrl = NSHostingController(rootView: nview)
+    let win = NSWindow(
+        contentRect: NSRect(x: 200, y: 200, width: 200, height: 200),
+        styleMask: [.titled, .closable],
+        backing: .buffered,
+        defer: false
+    )
+    win.contentView = ctrl.view
+    win.makeKeyAndOrderFront(nil)
 }
 
 #Preview {
