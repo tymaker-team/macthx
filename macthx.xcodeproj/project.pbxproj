@@ -423,7 +423,7 @@
 				CODE_SIGN_ENTITLEMENTS = macthx/macthx.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"macthx/Preview Content\"";
 				DEVELOPMENT_TEAM = 2FR67K5Q5R;
 				ENABLE_PREVIEWS = YES;
@@ -437,7 +437,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.91;
+				MARKETING_VERSION = 1.94.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymaker.macthx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -453,7 +453,7 @@
 				CODE_SIGN_ENTITLEMENTS = macthx/macthx.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"macthx/Preview Content\"";
 				DEVELOPMENT_TEAM = 2FR67K5Q5R;
 				ENABLE_PREVIEWS = YES;
@@ -467,7 +467,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MARKETING_VERSION = 1.91;
+				MARKETING_VERSION = 1.94.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tymaker.macthx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
